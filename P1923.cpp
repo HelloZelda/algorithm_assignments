@@ -2,3 +2,9 @@
 // 请提交完整代码
 // commit格式：姓名-本地测试结果-洛谷得分
 // 例如：Sam-本题测试ok-洛谷得分100
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  return 0;
+}

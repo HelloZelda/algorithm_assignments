@@ -2,7 +2,7 @@
 // 请提交完整代码
 // commit格式：姓名-本地测试结果-洛谷得分
 // 例如：Sam-本题测试ok-洛谷得分100
-#include<bis/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;	
 int n,arr[10000],k; 
 void quickSort(int left,int right)

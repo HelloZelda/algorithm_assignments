@@ -2,44 +2,38 @@
 // 请提交完整代码
 // commit格式：姓名-本地测试结果-洛谷得分
 // 例如：Sam-本题测试ok-洛谷得分100
-#include<bis/stdc++.h>
-using namespace std;	
-int n,arr[10000],k; 
-void quickSort(int left,int right)
+#include<bits/stdc++.h>
+using namespace std;
+int arr[5000005],k;
+void quickSort(int l,int r)
 {
-	if(left>=right)
+	int i=l,j=r,mid=arr[(l+r)/2];
+	do
 	{
-		return;
-	 } 
-	int pi=arr[(left+right)/2],i=left,j=right;
-	if(pi==k)
-	{
-		return arr[pi];
-	}
-	while(i<=j)
-	{
-		while(arr[i]<pi)
-		{
+		while(arr[j]>mid)
+			j--;
+		while(arr[i]<mid)
 			i++;
-		}
-		while(arr[j]>pi)
-		{
-			j--; 
-		}
 		if(i<=j)
 		{
-			swap(arr[i++],arr[j--]);
+			swap(arr[i],arr[j]);
+			i++;
+			j--;
 		}
 	}
-	quickSort(left,j);
-	quickSort(i,right)
+	while(i<=j);
+	if(k<=j) quickSort(l,j);
+	else if(i<=k) quickSort(i,r);
+	else
+	{
+		printf("%d",arr[j+1]);
+	}
 }
 int main()
-{	
-	scanf("%d",&n,&k);
-	for(int i=0;i<=n;i++)
-	{
+{
+	int n;
+	scanf("%d%d",&n,&k);
+	for(int i=0;i<n;i++)
 		scanf("%d",&arr[i]);
-	}
-	return 0;
+	quickSort(0,n-1);
 }

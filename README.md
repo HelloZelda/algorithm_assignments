@@ -1,2 +1,7 @@
-# algorithm_assignments
-assignments of algorithm
+# 算法练习
+此仓库用于算法练习作业提交
+## commit规范
+此仓库下的commit严格按照以下格式提交：
+`[姓名]-[本地测试结果(通过或未通过)]-[洛谷得分(如果是洛谷题)]`
+## issue规范
+如果遇到问题直接提issue。标题简介的描述所遇到的问题，具体的描述在issue内容中提交，最好附带上代码

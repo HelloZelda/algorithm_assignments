@@ -1,4 +1,9 @@
-/#include<bits/stdc++.h>
+// P1908 逆序对
+// 请提交完整代码
+// commit格式：姓名-本地测试情况-洛谷得分
+// 例：Sam-本地测试通过-洛谷得分100
+// Pull Request请提交到对应分支，请勿提交到main分支！
+#include<bits/stdc++.h>
 using namespace std;
 long long arr[10000000],sum;
 void mergeSort(long long arr[],int left,int right)

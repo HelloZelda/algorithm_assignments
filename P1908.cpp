@@ -26,13 +26,12 @@ void mergeSort(long long arr[],int left,int right)
 		else
 		{
 			temp[pos++]=arr[j++]; 
-            sum+=mid-i+1;                                                                                                                                                                               
+            		sum+=mid-i+1;                                                                                                                                                                               
 		}
 	}
 	while(i<=mid)
 	{
 		temp[pos++]=arr[i++];
-	
 	}
 	while(j<=right)
 	{

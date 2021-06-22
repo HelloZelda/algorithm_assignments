@@ -28,7 +28,6 @@ void mergeSort(int arr[],int left,int right)
 	while(i<=mid)
 	{
 		temp[pos++]=arr[i++];
-	
 	}
 	while(j<=right)
 	{

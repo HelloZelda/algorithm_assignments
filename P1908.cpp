@@ -21,7 +21,6 @@ void mergeSort(long long arr[],int left,int right)
 		if(arr[i]<=arr[j])
 		{
 			temp[pos++]=arr[i++];
-			
 		}
 		else
 		{

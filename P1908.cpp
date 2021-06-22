@@ -1,8 +1,7 @@
-// P1908 逆序对
-#include<bits/stdc++.h>
+/#include<bits/stdc++.h>
 using namespace std;
-int arr[10000000],sum;
-void mergeSort(int arr[],int left,int right)
+long long arr[10000000],sum;
+void mergeSort(long long arr[],int left,int right)
 {
 	if(left>=right)
 	{
@@ -17,16 +16,18 @@ void mergeSort(int arr[],int left,int right)
 		if(arr[i]<=arr[j])
 		{
 			temp[pos++]=arr[i++];
+			
 		}
 		else
 		{
 			temp[pos++]=arr[j++]; 
-           		sum+=mid-i+1;                                                                                                                                                                               
+            sum+=mid-i+1;                                                                                                                                                                               
 		}
 	}
 	while(i<=mid)
 	{
 		temp[pos++]=arr[i++];
+	
 	}
 	while(j<=right)
 	{
@@ -43,7 +44,6 @@ int main()
 		cin>>arr[i];
 	}
 	mergeSort(arr,1,a);
-
 		cout<<sum;
 	return 0;
 }

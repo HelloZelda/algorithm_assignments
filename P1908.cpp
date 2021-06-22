@@ -17,12 +17,11 @@ void mergeSort(int arr[],int left,int right)
 		if(arr[i]<=arr[j])
 		{
 			temp[pos++]=arr[i++];
-			
 		}
 		else
 		{
 			temp[pos++]=arr[j++]; 
-            sum+=mid-i+1;                                                                                                                                                                               
+           		sum+=mid-i+1;                                                                                                                                                                               
 		}
 	}
 	while(i<=mid)

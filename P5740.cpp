@@ -17,7 +17,8 @@ int main()
 	}
 	for(int i=0;i<n;i++)
   {
-		if(a[i].sum>Max){
+		if(a[i].sum>Max)
+		{
 			Max=a[i].sum;
 			fl=i;
 		}

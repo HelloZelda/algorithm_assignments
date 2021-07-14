@@ -1,0 +1,23 @@
+#include<bits/stdc++.h> 
+using  namespace std;
+int n,m;
+int c[1000];
+int main()
+{
+	cin>>n>>m;
+	for(int i=1;i<=m;i++)
+	{
+		int d;
+		cin>>d;
+		c[d]++;
+	}
+	for(int i=1;i<=n;i++)
+	{
+		while(c[i])
+		{
+			cout<<i<<" ";
+			c[i]--;
+		}
+	} 
+	return 0;
+}
